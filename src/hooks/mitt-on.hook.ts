@@ -2,10 +2,10 @@ import { useContext, useEffect } from 'react'
 import { MittContext } from '../core'
 import { EventType, Handler, WildcardHandler } from 'mitt'
 
-export function useMittOn<Key extends keyof Record<EventType, unknown>>(
-  key: Key,
-  cb: Handler<Record<EventType, unknown>[Key]>
-): void
+export function useMittOn<
+  Events extends Record<EventType, unknown>,
+  Key extends keyof Events
+>(key: Key, cb: Handler<Events[Key]>): void
 
 export function useMittOn(
   key: '*',
