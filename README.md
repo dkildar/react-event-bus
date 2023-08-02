@@ -13,17 +13,31 @@ npm install --save react-mitt-wrapper
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
-import MyComponent from 'react-mitt-wrapper'
-import 'react-mitt-wrapper/dist/index.css'
+import {MittProvider} from 'react-mitt-wrapper'
+import {useMittOn} from "./mitt-on.hook";
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+export function App() {
+  return <MittProvider>
+    <Foo />
+  </MittProvider>
+}
+
+export function Foo() {
+  useMittOn('myEvent', (eventData) => {
+    console.log(eventData)
+  })
+
+  return <></>
 }
 ```
+
+## Hooks
+`useMittOn(eventType, callback)` – uses for subscribing to the event
+`useMittOff(eventType, callback)` – uses for unsubscribing from the event
+`useMittEmit()` – uses for emitting value to the event. Returns `emit` function for it
+`useMittClear()` – uses for clearing all events
 
 ## License
 
