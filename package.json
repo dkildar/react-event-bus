@@ -4,10 +4,10 @@
   "description": "React provider and hooks for using Mitt events library",
   "author": "dkildar",
   "license": "MIT",
-  "repository": "dkildar/react-mitt-wrapper",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.ts",
+  "repository":"https://github.com/dkildar/react-mitt-wrapper",
   "engines": {
     "node": ">=10"
   },
