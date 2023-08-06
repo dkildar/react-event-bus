@@ -30,19 +30,17 @@ function useMittOn(key, cb) {
   }, []);
 }
 
-function useMittOff(key, cb) {
+function useMittOff() {
   var context = useContext(MittContext);
-  useEffect(function () {
-    context.client.on(key, cb);
-  }, []);
+  return {
+    off: context.client.off
+  };
 }
 
 function useMittClear() {
   var context = useContext(MittContext);
   return {
-    clear: function clear() {
-      return context.client.all.clear();
-    }
+    clear: context.client.all.clear
   };
 }
 

@@ -1,3 +1,6 @@
-import { EventType, Handler, WildcardHandler } from 'mitt';
-export declare function useMittOff<Events extends Record<EventType, unknown>, Key extends keyof Events>(key: Key, cb: Handler<Events[Key]>): void;
-export declare function useMittOff(key: '*', cb: WildcardHandler<Record<EventType, unknown>>): void;
+export declare function useMittOff(): {
+    off: {
+        <Key extends import("mitt").EventType>(type: Key, handler?: import("mitt").Handler<Record<import("mitt").EventType, unknown>[Key]> | undefined): void;
+        (type: "*", handler: import("mitt").WildcardHandler<Record<import("mitt").EventType, unknown>>): void;
+    };
+};
