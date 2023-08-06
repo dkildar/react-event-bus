@@ -1,6 +1,6 @@
 {
   "name": "react-mitt-wrapper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React provider and hooks for using Mitt events library",
   "author": "dkildar",
   "license": "MIT",
