@@ -5,6 +5,6 @@ export function useMittClear() {
   const context = useContext(MittContext)
 
   return {
-    clear: () => context.client.all.clear()
+    clear: context.client.all.clear
   }
 }
