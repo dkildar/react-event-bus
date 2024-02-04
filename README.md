@@ -2,7 +2,7 @@
 
 > React event bus
 
-[![NPM](https://img.shields.io/npm/v/react-event-bus.svg)](https://www.npmjs.com/package/-event-bus) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/pure-react-event-bus.svg)](https://www.npmjs.com/package/pure-react-event-bus) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
