@@ -1,13 +1,13 @@
 {
-  "name": "react-mitt-wrapper",
-  "version": "1.0.4",
-  "description": "React provider and hooks for using Mitt events library",
+  "name": "react-event-bus",
+  "version": "1.0.0",
+  "description": "React specified event bus",
   "author": "dkildar",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.ts",
-  "repository":"https://github.com/dkildar/react-mitt-wrapper",
+  "repository": "https://github.com/dkildar/react-event-bus",
   "engines": {
     "node": ">=10"
   },
@@ -34,6 +34,7 @@
     "@types/node": "18.0.0",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
+    "@types/uuid": "^9.0.8",
     "@typescript-eslint/eslint-plugin": "6.2.1",
     "@typescript-eslint/parser": "6.2.1",
     "babel-eslint": "10.1.0",
@@ -50,8 +51,8 @@
     "dist"
   ],
   "dependencies": {
-    "mitt": "^3.0.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "uuid": "^9.0.1"
   }
 }

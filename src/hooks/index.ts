@@ -1,4 +1,3 @@
-export * from './mitt-emit.hook'
-export * from './mitt-on.hook'
-export * from './mitt-off.hook'
-export * from './mitt-clear.hook'
+export * from './use-event-bus-publish'
+export * from './use-event-bus-on'
+export * from './use-event-bus'

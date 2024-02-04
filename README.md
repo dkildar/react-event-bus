@@ -1,13 +1,13 @@
 # react-mitt-wrapper
 
-> React provder and hooks for using Mitt events library
+> React event bus
 
-[![NPM](https://img.shields.io/npm/v/react-mitt-wrapper.svg)](https://www.npmjs.com/package/react-mitt-wrapper) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-event-bus.svg)](https://www.npmjs.com/package/-event-bus) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-mitt-wrapper
+npm install --save react-event-bus
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save react-mitt-wrapper
 ```tsx
 import React, {Component} from 'react'
 
-import {MittProvider, useMittOn} from 'react-mitt-wrapper'
+import {useEventBusOn} from 'react-mitt-wrapper'
 
 export function App() {
   return <MittProvider>
@@ -24,7 +24,7 @@ export function App() {
 }
 
 export function Foo() {
-  useMittOn('myEvent', (eventData) => {
+  useEventBusOn('myEvent', (eventData) => {
     console.log(eventData)
   })
 
@@ -33,13 +33,11 @@ export function Foo() {
 ```
 
 ## Hooks
-`useMittOn(eventType, callback)` – uses for subscribing to the event
+`useEventBus()` – retrieve event bus instance
 
-`useMittOff(eventType, callback)` – uses for unsubscribing from the event
+`useEventBusOn(eventKey, listener)` – assign specific listener function to event
 
-`useMittEmit()` – uses for emitting value to the event. Returns `emit` function for it
-
-`useMittClear()` – uses for clearing all events
+`useEventBusPiblish()` – uses for publishing events
 
 ## License
 

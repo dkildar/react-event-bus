@@ -1,2 +1,2 @@
-export * from './mitt.context'
-export * from './mitt.provider'
+export * from './types'
+export * from './event-bus'
