@@ -18,9 +18,7 @@ import React, {Component} from 'react'
 import {useEventBusOn} from 'react-mitt-wrapper'
 
 export function App() {
-  return <MittProvider>
-    <Foo />
-  </MittProvider>
+  return <Foo />
 }
 
 export function Foo() {
