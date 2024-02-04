@@ -1,4 +1,4 @@
-# react-mitt-wrapper
+# React event bus
 
 > React event bus
 
